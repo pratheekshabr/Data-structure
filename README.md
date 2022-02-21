@@ -41,6 +41,7 @@ output:<br>
 ***********************
 
 #include<stdio.h><br>
+using namespace std;<br>
 int stack[100],choice,n,top,x,i;<br>
 void push(void);<br>
 void pop(void);<br>
