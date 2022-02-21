@@ -1,6 +1,7 @@
 # Data-structure
-1.Binary Search<br>
 ****************
+1.Binary Search<br>
+***************
 #include <stdio.h><br>
 
 int main()<br>
@@ -35,7 +36,7 @@ output:<br>
 *********<br>
 
 ![Screenshot (18)](https://user-images.githubusercontent.com/97940277/154893532-ad5d1e8f-56f2-419f-b980-0b3c800ea959.png)<br>
-
+***********************<br>
 2.Stack using Array<br>
 ***********************
 
