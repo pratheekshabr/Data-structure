@@ -89,41 +89,41 @@ void push()<br>
 {<br>
     if(top>=n-1)<br>
     {<br>
-        printf("\nSTACK is over flow");<br>
+      printf("\nSTACK is over flow");<br>
          
     }<br>
     else<br>
     {<br>
-        printf(" Enter a value to be pushed:");<br>
-        scanf("%d",&x);<br><br>
-        top++;<br>
-        stack[top]=x;<br>
+       printf(" Enter a value to be pushed:");<br>
+       scanf("%d",&x);<br><br>
+       top++;<br>
+       stack[top]=x;<br>
     }<br>
 }<br>
 void pop()<br>
 {<br>
     if(top<=-1)<br>
     {<br>
-        printf("\n Stack is under flow");<br>
+       printf("\n Stack is under flow");<br>
     }<br>
     else<br>
     {<br>
-        printf("\nThe popped elements is %d",stack[top]);<br>
-        top--;<br>
+       printf("\nThe popped elements is %d",stack[top]);<br>
+       top--;<br>
     }<br>
 }<br>
 void display()<br>
 {<br>
     if(top>=0)<br>
     {<br>
-        printf("\n The elements in STACK \n");<br>
-        for(i=top; i>=0; i--)<br>
-            printf("\n%d",stack[i]);<br>
-        printf("\n Enter Next Choice");<br>
+       printf("\n The elements in STACK \n");<br>
+       for(i=top; i>=0; i--)<br>
+       printf("\n%d",stack[i]);<br>
+       printf("\n Enter Next Choice");<br>
     }<br>
     else<br>
     {<br>
-        printf("\n The STACK is empty");<br><br>
+        printf("\n The STACK is empty");<br>
     }<br>
 }<br>
 
