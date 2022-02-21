@@ -130,3 +130,6 @@ void display()<br>
     }<br>
 }<br>
 
+Output:<br>
+![Screenshot (21)](https://user-images.githubusercontent.com/97940277/154897408-96f889e9-9d61-4197-bee9-d3e66a887445.png)<br>
+
