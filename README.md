@@ -31,4 +31,8 @@ int main()<br>
     printf("Not found! %d isn't present in the list.\n", search);<br>
   return 0;<br>
 }<br>
+output:<br>
+*********<br>
+
+![Screenshot (18)](https://user-images.githubusercontent.com/97940277/154893532-ad5d1e8f-56f2-419f-b980-0b3c800ea959.png)
 
