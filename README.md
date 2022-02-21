@@ -74,11 +74,11 @@ int main()<br>
             {<br>
                 printf("\nExiting...");<br>
                 break;<br>
-            }<br>
-            default:<br>
-            {<br>
-                printf ("\n Please Enter a Valid Choice(1/2/3/4)");<br>
-            }<br>
+           }<br>
+           default:<br>
+           {<br>
+              printf ("\n Please Enter a Valid Choice(1/2/3/4)");<br>
+           }<br>
                  
         }<br>
     }<br>
@@ -91,9 +91,9 @@ void push()<br>
     {<br>
       printf("\nSTACK is over flow");<br>
          
-    }<br>
-    else<br>
-    {<br>
+   }<br>
+   else<br>
+   {<br>
        printf(" Enter a value to be pushed:");<br>
        scanf("%d",&x);<br><br>
        top++;<br>
