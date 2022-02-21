@@ -131,6 +131,7 @@ void display()<br>
 }<br>
 
 Output:<br>
+*******<br>
 ![Screenshot (21)](https://user-images.githubusercontent.com/97940277/154897408-96f889e9-9d61-4197-bee9-d3e66a887445.png)<br>
 ****************************
 3.Array using Linked list.<br>
@@ -187,7 +188,89 @@ int main()<br>
 	return 0;<br>
 }<br>
 Output:<br>
-![Screenshot (23)](https://user-images.githubusercontent.com/97940277/154898295-15a6bf31-fd14-43b7-b528-6d6300ad83c0.png)
+*******<br>	
+![Screenshot (23)](https://user-images.githubusercontent.com/97940277/154898295-15a6bf31-fd14-43b7-b528-6d6300ad83c0.png)<br>
+***************
+4.write a C++ Program to split the linked list into two in such a way that the given element ele must be the first node of second list.<br>
+***************	
+#include<iostream><br>
+using namespace std;<br>
+struct Node{<br>
+int value;<br>
+struct Node *next;<br>
+};<br>
+struct Node* head = NULL;<br>
+struct Node* sHead = NULL;<br>
+struct Node* temp = NULL;<br>
+void insert(int new_data){<br>
+struct Node* new_node = new Node(); //(struct Node*)malloc(sizeof(struct Node));<br>
+new_node->value = new_data;<br>
+new_node->next = head;<br>
+head = new_node;<br>
+}<br>
+int n;<br>
+int ele;<br>
+int splitIndex;<br>
+int main(){<br>
+int i,j;<br>
+cout<<"Enter number of elements you want in the list\t";<br>
+cin>>n;<br>
+cout<<"Enter elements :" <<endl;<br>
+for(i=0;i<n;i++){<br>
+cin>>ele;<br>
+insert(ele);<br>
+}<br>
+cout<<"\nList of elements : "<<endl;<br>
+Node *t;<br>
+t = head;<br>
+while(t != NULL){<br>
+cout<<t->value<<"\t";<br>
+t = t->next;<br>
+}<br>
+cout<<"\n\nEnter the position you want the list to split ";<br>
+cin>>splitIndex;<br>
+while(splitIndex < 0 || splitIndex > n-1){<br>
+cout<<"Invalid position. Try again."<<endl;<br>
+cin>>splitIndex;<br>
+}<br>
+temp = head;<br>
+for(i=0;i<=splitIndex;i++){<br>
+if(i==splitIndex-1){<br>
+Node *tN;<br>
+tN = temp->next;<br>
+sHead = tN;<br>
+temp->next = NULL;<br>
+break;<br>
+}<br>
+temp = temp->next;<br>
+}<br>
+temp = head;<br>
+if(temp == NULL){<br>
+cout<<"\nFirst list is empty"<<endl;<br>
+}else{<br>
+cout<<"\n\nFirst list element "<<endl;<br>
+while(temp != NULL){<br>
+cout<<temp->value<<"\t";<br>
+temp = temp->next;<br>
+}<br>
+}<br>
+temp = sHead;<br>
+if(temp == NULL){<br>
+cout<<"\nSecond list is empty"<<endl;<br>
+}else{<br>
+cout<<"\n\nSecond list elements "<<endl;<br>
+while(temp != NULL){<br>
+cout<<temp->value<<"\t";<br>
+temp = temp->next;<br>
+}<br>
+}<br>
+return 0;<br>
+}<br>
+Output:<br>
+*******<br>
+![Screenshot (24)](https://user-images.githubusercontent.com/97940277/154902019-cc4dad66-2d2a-41e2-81ea-3568ed9565a4.png)![Screenshot (26)](https://user-images.githubusercontent.com/97940277/154902238-71b673b3-fc60-4212-b6bf-f6d24ef2b849.png)
+<br>
+	
 
 
 
