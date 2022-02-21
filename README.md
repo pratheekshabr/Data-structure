@@ -186,6 +186,8 @@ int main()<br>
 	display(root);<br>
 	return 0;<br>
 }<br>
+Output:<br>
+![Screenshot (23)](https://user-images.githubusercontent.com/97940277/154898295-15a6bf31-fd14-43b7-b528-6d6300ad83c0.png)
 
 
 
