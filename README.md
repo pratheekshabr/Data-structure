@@ -2,7 +2,7 @@
 ****************
 1.Binary Search<br>
 ***************
-#include <stdio.h><br>
+#include<stdio.h><br>
 
 int main()<br>
 {<br>
@@ -192,8 +192,8 @@ Output:<br>
 ![Screenshot (23)](https://user-images.githubusercontent.com/97940277/154898295-15a6bf31-fd14-43b7-b528-6d6300ad83c0.png)<br>
 ***************
 4.Write a C++ Program to split the linked list into two in such a way that the given element ele must be the first node of second list.<br>
-***************	
-#include<iostream><br>
+***************
+#include<iostream.h>
 using namespace std;<br>
 struct Node{<br>
 int value;<br>
