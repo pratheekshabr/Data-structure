@@ -132,4 +132,62 @@ void display()<br>
 
 Output:<br>
 ![Screenshot (21)](https://user-images.githubusercontent.com/97940277/154897408-96f889e9-9d61-4197-bee9-d3e66a887445.png)<br>
+****************************
+3.Array using Linked list.<br>
+*****************************
+#include <iostream><br>
+using namespace std;<br>
+
+// Representation of a node
+struct Node {<br>
+	int data;<br>
+	Node* next;<br>
+};<br>
+
+// Function to insert node
+void insert(Node** root, int item)<br>
+{<br>
+	Node* temp = new Node;<br>
+	Node* ptr;<br>
+	temp->data = item;<br>
+	temp->next = NULL;<br>
+	if (*root == NULL)<br>
+		*root = temp;<br>
+	else {<br>
+		ptr = *root;<br>
+		while (ptr->next != NULL)<br>
+			ptr = ptr->next;<br>
+		ptr->next = temp;<br>
+	}<br>
+}<br>
+
+void display(Node* root)<br>
+{
+	while (root != NULL) {<br>
+		cout << root->data << " ";<br>
+		root = root->next;<br>
+	}<br>
+}<br>
+
+Node *arrayToList(int arr[], int n)<br>
+{<br>
+	Node *root = NULL;<br>
+	for (int i = 0; i < n; i++)<br>
+		insert(&root, arr[i]);<br>
+return root;<br>
+}<br>
+
+// Driver code
+int main()<br>
+{<br>
+	int arr[] = { 1, 2, 3, 4, 5 };<br>
+	int n = sizeof(arr) / sizeof(arr[0]);<br>
+	Node* root = arrayToList(arr, n);<br>
+	display(root);<br>
+	return 0;<br>
+}<br>
+
+
+
+
 
