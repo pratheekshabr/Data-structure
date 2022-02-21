@@ -191,7 +191,7 @@ Output:<br>
 *******<br>	
 ![Screenshot (23)](https://user-images.githubusercontent.com/97940277/154898295-15a6bf31-fd14-43b7-b528-6d6300ad83c0.png)<br>
 ***************
-4.write a C++ Program to split the linked list into two in such a way that the given element ele must be the first node of second list.<br>
+4.Write a C++ Program to split the linked list into two in such a way that the given element ele must be the first node of second list.<br>
 ***************	
 #include<iostream><br>
 using namespace std;<br>
@@ -268,8 +268,7 @@ return 0;<br>
 }<br>
 Output:<br>
 *******<br>
-![Screenshot (24)](https://user-images.githubusercontent.com/97940277/154902019-cc4dad66-2d2a-41e2-81ea-3568ed9565a4.png)![Screenshot (26)](https://user-images.githubusercontent.com/97940277/154902238-71b673b3-fc60-4212-b6bf-f6d24ef2b849.png)
-<br>
+![Screenshot (24)](https://user-images.githubusercontent.com/97940277/154902019-cc4dad66-2d2a-41e2-81ea-3568ed9565a4.png)<br>![Screenshot (26)](https://user-images.githubusercontent.com/97940277/154902238-71b673b3-fc60-4212-b6bf-f6d24ef2b849.png)<br>
 	
 
 
