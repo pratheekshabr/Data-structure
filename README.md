@@ -36,7 +36,7 @@ output:<br>
 *********<br>
 
 ![Screenshot (18)](https://user-images.githubusercontent.com/97940277/154893532-ad5d1e8f-56f2-419f-b980-0b3c800ea959.png)<br>
-***********************<br>
+***********************
 2.Stack using Array<br>
 ***********************
 
@@ -81,10 +81,10 @@ int main()<br>
            default:<br>
            {<br>
              printf ("\n Please Enter a Valid Choice(1/2/3/4)");<br>
-            }<br>
-                 
-            }<br>
-         }<br>
+   }<br>
+                
+  }<br>
+ }<br>
     while(choice!=4);<br>
     return 0;<br>
 }<br>
