@@ -615,6 +615,19 @@ void BST::display(node *ptr, int level) <br>
  display(ptr->left, level+1); <br> 
  } <br> 
 }<br> 
+Output:
+*******<br>
+![Screenshot (37)](https://user-images.githubusercontent.com/97940277/155927451-6f53476e-b378-4b19-b3d9-5236beba1726.png)<br>
+![Screenshot (38)](https://user-images.githubusercontent.com/97940277/155927573-db445807-8abd-4edc-a3ff-80c06378e986.png)<br>
+![Screenshot (39)](https://user-images.githubusercontent.com/97940277/155927666-97362262-0d36-4711-914c-14106f8faf9c.png)<br>
+![Screenshot (40)](https://user-images.githubusercontent.com/97940277/155927787-a9e3fed8-5bd0-4be7-ae1a-f40d7d6b028d.png)<br>
+![Screenshot (41)](https://user-images.githubusercontent.com/97940277/155927878-bcc5f824-975e-47e5-88c1-d9f3193e43ec.png)<br>
+![Screenshot (44)](https://user-images.githubusercontent.com/97940277/155928085-9d0a9e80-556b-4e41-8b00-89e00974f9a9.png)<br>
+
+	
+
+	
+	
 
 
 
