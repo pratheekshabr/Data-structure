@@ -278,8 +278,8 @@ Assume no duplicate elements while constructing the BST<br>
 3.Delete an element from a BST<br>
 Display the tree using Inorder,Preorder and Postorder traversal methods<br>
 *******************
-# include <iostream> 
-# include <cstdlib> <br> 
+	# include <iostream> 
+	# include <cstdlib> <br> 
 using namespace std; <br>
 struct node <br>
 { <br>
