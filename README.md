@@ -628,7 +628,7 @@ Output:
 *********************
 6.C++ Program to Implement Min Heap<br>
 *************
-  #include<iostream><br> 
+     #include<iostream><br> 
 #include <conio.h><br>
 using namespace std;<br>
 void min_heap(int *a, int m, int n){<br>
