@@ -628,7 +628,7 @@ Output:
 *********************
 6.C++ Program to Implement Min Heap<br>
 *************
-     #include<iostream><br> 
+    #include<iostream><br> 
 #include <conio.h><br>
 using namespace std;<br>
 void min_heap(int *a, int m, int n){<br>
@@ -731,9 +731,9 @@ Output:<br>
   
   void heapify(int arr[], int n, int i) {<br>
     
-    int largest = i;<br>
-    int left = 2 * i + 1;<br>
-    int right = 2 * i + 2;<br>
+      int largest = i;<br>
+      int left = 2 * i + 1;<br>
+      int right = 2 * i + 2;<br>
   
     if (left < n && arr[left] > arr[largest])<br>
       largest = left;<br>
@@ -741,7 +741,7 @@ Output:<br>
     if (right < n && arr[right] > arr[largest])<br>
       largest = right;<br>
 
-    if (largest != i) {<br>
+     if (largest != i) {<br>
       swap(arr[i], arr[largest]);<br>
       heapify(arr, n, largest);<br>
     }<br>
@@ -751,7 +751,7 @@ Output:<br>
     for (int i = n / 2 - 1; i >= 0; i--)<br>
       heapify(arr, n, i);<br>
 
-    for (int i = n - 1; i >= 0; i--) {<br>
+     for (int i = n - 1; i >= 0; i--) {<br>
       swap(arr[0], arr[i]);<br>
  
       
@@ -761,7 +761,7 @@ Output:<br>
   
   void printArray(int arr[], int n) {<br>
     for (int i = 0; i < n; ++i)<br>
-      cout << arr[i] << " ";<br>
+    cout << arr[i] << " ";<br>
     cout << "\n";<br>
   }<br>
   
