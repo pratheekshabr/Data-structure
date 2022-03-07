@@ -674,7 +674,115 @@ Output:<br>
 **********<br>
 ![Screenshot (46)](https://user-images.githubusercontent.com/97940277/155932218-2ea0ab8f-b69c-4037-9ec8-dff7747d187f.png)<br>
 	
+******************
+7..C++ Program to Implement Max Heap<br>
+******************
+#include <iostream><br>
+using namespace std;<br>
+void max_heap(int *a, int m, int n) {<br>
+   int j, t;<br>
+   t = a[m];<br>
+   j = 2 * m;<br>
+   while (j <= n) {<br>
+      if (j < n && a[j+1] > a[j])<br>
+         j = j + 1;<br>
+      if (t > a[j])<br>
+         break;<br>
+      else if (t <= a[j]) {<br>
+         a[j / 2] = a[j];<br>
+         j = 2 * j;<br>
+      }<br>
+   }<br>
+   a[j/2] = t;<br>
+   return;<br>
+}<br>
+void build_maxheap(int *a,int n) {<br>
+   int k;<br>
+   for(k = n/2; k >= 1; k--) {<br>
+      max_heap(a,k,n);<br>
+   }<br>
+}<br>
+int main() {<br>
+   int n, i;<br>
+   cout<<"enter no of elements of array\n";<br>
+   cin>>n;<br>
+   int a[30];<br>
+   for (i = 1; i <= n; i++) {<br>
+      cout<<"enter elements"<<" "<<(i)<<endl;<br>
+      cin>>a[i];<br>
+   }<br>
+   build_maxheap(a,n);<br>
+   cout<<"Max Heap\n";<br>
+   for (i = 1; i <= n; i++) {<br>
+      cout<<a[i]<<endl;<br>
+   }<br>
+}	<br>
+
+Output:<br>
+**********<br>
+![Screenshot (82)](https://user-images.githubusercontent.com/97940277/156970864-bde89a6d-7fe1-4159-af09-3ac0876648e5.png)<br>
+
+********************
+8. Program to implement heap sort.<br>
+********************
+ 
+  #include <iostream><br>
+  using namespace std;<br>
+  
+  void heapify(int arr[], int n, int i) {<br>
+    
+    int largest = i;<br>
+    int left = 2 * i + 1;<br>
+    int right = 2 * i + 2;<br>
+  
+    if (left < n && arr[left] > arr[largest])<br>
+      largest = left;<br>
+  
+    if (right < n && arr[right] > arr[largest])<br>
+      largest = right;<br>
+
+    if (largest != i) {<br>
+      swap(arr[i], arr[largest]);<br>
+      heapify(arr, n, largest);<br>
+    }<br>
+  }<br>
+  
+  void heapSort(int arr[], int n) {<br>
+    for (int i = n / 2 - 1; i >= 0; i--)<br>
+      heapify(arr, n, i);<br>
+
+    for (int i = n - 1; i >= 0; i--) {<br>
+      swap(arr[0], arr[i]);<br>
+ 
+      
+      heapify(arr, i, 0);<br>
+    }<br>
+  }<br>
+  
+  void printArray(int arr[], int n) {<br>
+    for (int i = 0; i < n; ++i)<br>
+      cout << arr[i] << " ";<br>
+    cout << "\n";<br>
+  }<br>
+  
+
+  int main() {<br>
+    int arr[] = {1, 12, 9, 5, 6, 10};<br>
+    int n = sizeof(arr) / sizeof(arr[0]);<br>
+    heapSort(arr, n);<br>
+  
+    cout << "Sorted array is \n";<br>
+    printArray(arr, n);<br>
+  }<br>
+Output:<br>
+********<br>
+ 
+ ![Screenshot (84)](https://user-images.githubusercontent.com/97940277/156971638-8950d4e2-b850-4066-9f38-6177608ead65.png)<br>
+
+*************************************
+9.
 	
+
 
 
 
