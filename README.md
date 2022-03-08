@@ -780,8 +780,83 @@ Output:<br>
  ![Screenshot (84)](https://user-images.githubusercontent.com/97940277/156971638-8950d4e2-b850-4066-9f38-6177608ead65.png)<br>
 
 *************************************
-9.
-	
+9.Write a C++program to implement subset using backtracking</br>
+*************************************
+#include <iostream><br>
+#include <stack><br>
+ 
+using namespace std;<br>
+ 
+int set[] = {10, 9, 5, 18, 12, 20, 15};
+int numberOfElements = 7, sum = 32;
+ 
+class SubSet{
+public:
+  stack<int> solutionSet;
+  bool hasSolution;
+  
+  void solve(int s, int idx){
+      
+    //return if s exceed sum
+    if(s>sum)
+        return;
+ 
+    //check if stack has the right subsets of numbers
+    if(s==sum){
+        hasSolution = true;
+        //display stack contents
+        displaySolutionSet();
+        //Though found a solution but deliberately 
+        //returning to find more
+        return;
+    }
+        
+ 
+    for(int i=idx; i<numberOfElements; i++){
+        //Adding element to the stack
+        solutionSet.push(set[i]);
+ 
+        //add set[i] to the 's' and recusively start from next number
+        solve(s+set[i],i+1);
+        
+        //Removing element from stack i.e Backtracking
+        solutionSet.pop();
+    }
+  }
+  
+  //Function to display stack content
+  void displaySolutionSet(){
+        stack<int> temp;
+      
+        while (!solutionSet.empty()) 
+        { 
+            cout <<  solutionSet.top() << " "; 
+            temp.push(solutionSet.top()); 
+            solutionSet.pop();
+        } 
+        cout << '\n';
+        while (!temp.empty()) 
+        { 
+            solutionSet.push(temp.top()); 
+            temp.pop();
+        } 
+    }
+};
+ 
+int main()
+{
+    SubSet ss;
+    ss.solve(0,0);
+	    
+	if(ss.hasSolution == false)
+	    cout << "No Solution";
+ 
+    return 0;
+}	
+Output:<br>
+*********<br>
+![Screenshot (86)](https://user-images.githubusercontent.com/97940277/157172838-e3b3b977-eb59-4c13-a8f0-453ab18b6873.png)<br>
+
 
 
 
